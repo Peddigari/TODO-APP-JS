@@ -135,7 +135,7 @@ section {
 }
 
 .AddBtn {
-	background-color: blue;
+	/* background-color: blue; */
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -165,6 +165,7 @@ section {
 	text-align: center;
 	font-weight: bold;
 	color: red;
+	font-size: 40px;
 }
 
 .toDoDes {
