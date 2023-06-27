@@ -78,7 +78,9 @@ function addnewPopup() {
 	deleteBtn.innerHTML = `<img src="deleteimage.png">`;
 	deleteBtn.addEventListener('click', () => {
 		var cardDelete = deleteBtn.parentNode;
+		cardDelete.style.display="none";
 		cardDelete.remove();
+		todoCount--;
 	});
 
 	toDoCard.appendChild(boxAddButton);
@@ -88,6 +90,7 @@ function addnewPopup() {
 		shadowDiv.classList.add('shadow');
 		addItem.style.display = 'flex';
 		card = boxAddButton.parentNode;
+		document.querySelector('#inpuTtext').value="";
 	});
 }
 
