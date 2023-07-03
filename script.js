@@ -41,12 +41,18 @@ function addnewPopup() {
 	CardHeading.innerHTML = `${inputValue.value}`;
 	document.querySelector('#addpara').value="";
 	CardHeading.addEventListener('click', () => {
+		var allItems = document.querySelectorAll('.box');
 		var card = CardHeading.parentNode;
 		var cardVal = CardHeading.innerHTML;
 		header.style.display = 'none';
-		toDoHeading.style.display = 'none';
-		shadowDiv.appendChild(card);
-		card.classList.add('Position');
+		card.style.display = 'block';
+		// toDoHeading.style.display = 'none';
+		// shadowDiv.appendChild(card);
+		// card.classList.add('Position');
+		allItems.forEach((cards)=>{
+			if(cards!==card)
+			cards.style.display = 'none';			
+		});
 		document.querySelector('.sidebar').style.display = 'flex';
 		document.querySelector('.text').innerHTML = `<div>${cardVal}</div>`;
 		document.querySelector('#addpara').value='';
@@ -55,8 +61,11 @@ function addnewPopup() {
 			header.style.display = 'flex';
 			toDoHeading.style.display = 'flex';
 			document.querySelector('.sidebar').style.display = 'none';
-			toDoHeading.appendChild(card);
-			card.classList.remove('Position');
+			allItems.forEach((cards)=>{			
+				cards.style.display = 'block';	
+			});
+			// toDoHeading.appendChild(card);
+			// card.classList.remove('Position');
 		});
 
 		document.querySelector('#addItem').addEventListener('click', () => {
@@ -65,8 +74,11 @@ function addnewPopup() {
 			header.style.display = 'flex';
 			toDoHeading.style.display = 'flex';
 			document.querySelector('.sidebar').style.display = 'none';
-			toDoHeading.appendChild(card);
-			card.classList.remove('Position');
+			allItems.forEach((cards)=>{			
+				cards.style.display = 'block';	
+			});
+			// toDoHeading.appendChild(card);
+			// card.classList.remove('Position');
 			
 		});
 	});
