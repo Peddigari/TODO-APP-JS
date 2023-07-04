@@ -110,6 +110,7 @@ section {
 	border-radius: 6px;
 	position: relative;
 	text-align: center;
+	margin-right: 30px;
 }
 
 .CardHeading {
@@ -222,9 +223,10 @@ section {
 
 	.addList,
 	.addItem {
-		left: 10%;
-		top: 150px;
+		left: 20px;
+		top: 200px;
 		width: 80%;
+
 	}
 }
 
@@ -232,6 +234,9 @@ section {
 	header {
 		flex-direction: column;
 		gap: 20px;
+		justify-content: center;
+    align-items: center;
+    margin-right: 30px;
 	}
 
 
@@ -245,8 +250,8 @@ section {
 
 	.addList,
 	.addItem {
-		left: 34px;
-		top: 150px;
+		left: 20px;
+		top: 200px;
 	}
 }
 
@@ -262,6 +267,9 @@ section {
 	header {
 		flex-direction: column;
 		gap: 20px;
+		justify-content: center;
+    align-items: center;
+    margin-right: 30px;
 	}
 
 	section {
@@ -273,8 +281,8 @@ section {
 
 	.addList,
 	.addItem {
-		left: 20%;
-		top: 150px;
+		left: 20px;
+		top: 200px;
 	}
 }
 
@@ -282,6 +290,9 @@ section {
 	header {
 		flex-direction: column;
 		gap: 20px;
+		justify-content: center;
+    align-items: center;
+    margin-right: 30px;
 	}
 
 	section {
@@ -293,9 +304,9 @@ section {
 
 	.addList,
 	.addItem {
-		left: 0;
+		left: 20px;
 		margin-left: 115px;
-		top: 150px;
+		top: 200px;
 	}
 }
 
@@ -307,7 +318,7 @@ section {
 
 	.addList,
 	.addItem {
-		left: 25%;
-		top: 160px;
+		left: 20px;
+		top: 200px;
 	}
 }
