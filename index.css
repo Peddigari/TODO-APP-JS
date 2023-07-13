@@ -309,6 +309,10 @@ section {
 		top: 200px;
 	}
 }
+.sec{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
 	section {
