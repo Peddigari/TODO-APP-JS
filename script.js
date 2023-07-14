@@ -46,6 +46,7 @@ function addnewPopup() {
 		var cardVal = CardHeading.innerHTML;
 		header.style.display = 'none';
 		card.style.display = 'block';
+		toDoHeading.style.justifyContent="center";
 		// toDoHeading.style.display = 'none';
 		// shadowDiv.appendChild(card);
 		// card.classList.add('Position');
@@ -60,6 +61,7 @@ function addnewPopup() {
 		document.querySelector('.Back').addEventListener('click', () => {
 			header.style.display = 'flex';
 			toDoHeading.style.display = 'flex';
+			toDoHeading.style.justifyContent='space-between';
 			document.querySelector('.sidebar').style.display = 'none';
 			allItems.forEach((cards)=>{			
 				cards.style.display = 'block';	

@@ -49,7 +49,8 @@ section {
 	margin-left: 70px;
 	width: 90%;
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: flex-start; */
+	justify-content: space-between;
 	flex-wrap: wrap;
 	font-size: 30px;
 	gap: 26px;
@@ -68,7 +69,7 @@ section {
 	margin: auto;
 	position: fixed;
 	top: 200px;
-	left: 33%;
+	left: 35%;
 	color: orange;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -199,6 +200,14 @@ section {
 	color: red;
 }
 
+/* @media screen and (min-width: 320px) and (max-width: 360px) {
+	.addList 
+	.addItem {
+		left: 5% !important;
+	}
+
+} */
+
 @media screen and (min-width: 360px) and (max-width: 400px) {
 	header {
 		flex-direction: column;
@@ -223,10 +232,14 @@ section {
 
 	.addList,
 	.addItem {
-		left: 20px;
-		top: 200px;
+		left: 34px;
+		top: 220px;
 		width: 80%;
 
+	}
+
+	.box {
+		margin-right: 0px;
 	}
 }
 
@@ -234,9 +247,9 @@ section {
 	header {
 		flex-direction: column;
 		gap: 20px;
-		justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+		/* justify-content: space-between; */
+		align-items: center;
+		margin-right: 30px;
 	}
 
 
@@ -250,7 +263,7 @@ section {
 
 	.addList,
 	.addItem {
-		left: 20px;
+		left: 30px;
 		top: 200px;
 	}
 }
@@ -263,13 +276,17 @@ section {
 	font-size: 20px;
 }
 
+.box {
+	margin-right: 0px;
+}
+
 @media screen and (min-width: 440px) and (max-width: 530px) {
 	header {
 		flex-direction: column;
 		gap: 20px;
 		justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+		align-items: center;
+		margin-right: 30px;
 	}
 
 	section {
@@ -281,9 +298,13 @@ section {
 
 	.addList,
 	.addItem {
-		left: 20px;
+		left: 70px;
 		top: 200px;
 	}
+}
+
+.box {
+	margin-right: 0px;
 }
 
 @media screen and (min-width: 530px) and (max-width: 600px) {
@@ -291,8 +312,8 @@ section {
 		flex-direction: column;
 		gap: 20px;
 		justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+		align-items: center;
+		margin-right: 30px;
 	}
 
 	section {
@@ -309,9 +330,20 @@ section {
 		top: 200px;
 	}
 }
-.sec{
+
+.sec {
+	width: 70%;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	gap: 35px;
+
+}
+
+.box {
+	/* display: flex; */
+	margin-right: 0px;
+	/* flex: 0 0 22.333333%; */
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -322,7 +354,7 @@ section {
 
 	.addList,
 	.addItem {
-		left: 20px;
-		top: 200px;
+		left: 150px;
+		top: 220px;
 	}
 }
